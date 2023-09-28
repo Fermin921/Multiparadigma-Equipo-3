@@ -3,26 +3,15 @@
 # del día de hoy en el formato seleccionado.
 import datetime
 
-
-def ImprimirFecha1():
-    FechaActual = datetime.datetime.today()
-    print(f"{FechaActual.year}/{FechaActual.month}/{FechaActual.day}")
-
-
-def ImprimirFecha2():
-    FechaActual = datetime.datetime.today()
-    print(f"{FechaActual.month}/{FechaActual.day}/{FechaActual.year}")
-
+fechaActual=datetime.date.today()
 
 while True:
-    TipoFecha = int(
-        input("¿Como desea imprimir la fecha? \n 1.YYYY/MM/DD \n 2.MM/DD/YYYY \n ")
-    )
+    TipoFecha = int(input("¿Como desea imprimir la fecha? \n 1.YYYY/MM/DD \n 2.MM/DD/YYYY \n "))
     if TipoFecha == 1:
-        print(ImprimirFecha1())
+        print(datetime.date.strftime(fechaActual,'%y/%m/%d'))
         break
     elif TipoFecha == 2:
-        print(ImprimirFecha2())
+        print(datetime.date.strftime(fechaActual,'%m/%d/%y'))
         break
     else:
-        print("Ingreso un valor erroneo del menu")
+        print("Ingresó una opción que no existe en el menú.")
