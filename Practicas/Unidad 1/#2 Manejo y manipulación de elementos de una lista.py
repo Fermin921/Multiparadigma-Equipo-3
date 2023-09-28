@@ -6,6 +6,6 @@ Abecedario = [chr(i) for i in range(97, 123)]
 
 for i in range(len(Abecedario) - 1, -1, -1):
     if (i % 2) == 0:
-        del Abecedario[i]
+        del Abecedario[i - 1]
 
 print(Abecedario)
