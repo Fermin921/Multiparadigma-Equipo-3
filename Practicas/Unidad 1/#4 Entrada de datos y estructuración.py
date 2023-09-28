@@ -8,22 +8,30 @@ TotalCreditos = 0
 Materias = []
 
 print("Piense en sus materias favoritas de semestres pasados inferior a 8vo")
+    
 while True:
-    Materia = input("Favor de ingresar el nombre de la materia: ")
-    Creditos = int(
-        input("Agregar la cantidad de creditos con la que cuenta la materia: ")
-    )
-    CargaAcademica[Materia] = Creditos
-    TotalCreditos += Creditos
-    Materias.append(Materia)
-    Pregunta = int(
-        input("¿Quiere seguir ingresando materias? (1 para Sí, 2 para No): ")
-    )
-    if Pregunta == 2:
-        break
+    try:
+        Materia = input("Favor de ingresar el nombre de la materia: ")
+        
+        while True:
+            Creditos = int(input("Agregar la cantidad de créditos con la que cuenta la materia: "))
+            if Creditos<0:
+                print("Debe ingresar números positivos.")
+            else:
+                break
+                  
+        CargaAcademica[Materia] = Creditos
+        TotalCreditos += Creditos
+        Materias.append(Materia)
+        seguir = input("Si desea terminar de ingresar materias escriba \"exit\" sino da enter: ")
+        if seguir.lower()=='exit':
+            break
+    except ValueError:
+        print("Debes ingresar un número entero.")
 
-print("Resumen de materias")
+print("RESUMEN DE MATERIAS")
 for Materia, Creditos in CargaAcademica.items():
-    print(f'"{Materia}" tiene "{Creditos}" creditos.')
+    print(f'"{Materia}" tiene "{Creditos}" créditos.')
 
-print(f"Total de creditos del semestre: {TotalCreditos}")
+print(f"Total de créditos del semestre: {TotalCreditos}")
+print(f"Lista de todas las materias: {Materias}")
