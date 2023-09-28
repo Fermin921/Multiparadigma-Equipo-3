@@ -1,12 +1,13 @@
 # Escribir un programa que permita al usuario capturar su nombre completo e imprima su nombre de
 # manera inversa letra por letra intercalando una letra minuscula a una mayuscula ejemplo Luis : L u I s
 
-Nombre = input("Favor de ingresar su nombre completo: ")
-Nombre2 = ""
-for i in range(len(Nombre)):
+NombreCompleto = input("Favor de ingresar su nombre completo: ")
+NombreIntercalado = ""
+for i in range(len(NombreCompleto)):
     if ((i + 1) % 2) == 0:
-        Nombre2 += Nombre[i].lower()
+        NombreIntercalado += NombreCompleto[i].lower()
     else:
-        Nombre2 += Nombre[i].upper()
+        NombreIntercalado += NombreCompleto[i].upper()
 
-print(Nombre2)
+NombreInvertido = ''.join(reversed(NombreIntercalado))
+print(NombreInvertido)
