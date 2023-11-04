@@ -1,0 +1,117 @@
+$I:25:44 PM : DEBUG [logger_base.py] : 11 Pruba
+$I:25:44 PM : ERROR [logger_base.py] : 12 Error
+$I:25:44 PM : CRITICAL [logger_base.py] : 13 Critico
+$I:25:44 PM : WARNING [logger_base.py] : 14 Warning
+$I:35:42 PM : DEBUG [CursorPoll.py] : 11 Inicio de bloque with
+$I:35:42 PM : DEBUG [Conexion2.py] : 40 Conexion Realizada <connection object at 0x00000184C7EC9BE0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:35:42 PM : DEBUG [CursorPoll.py] : 17 Se ejecuta exit
+$I:35:42 PM : DEBUG [Conexion2.py] : 46 Conexion regresada <connection object at 0x00000184C7EC9BE0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:35:42 PM : DEBUG [AlumnoDAO.py] : 55 idAlumno: 1
+Nombre: Gerardo Jesus
+Apellido P: Cruz
+:Apellido M: Mota
+$I:35:42 PM : DEBUG [AlumnoDAO.py] : 55 idAlumno: 3
+Nombre: Victor Fermin
+Apellido P: Martinez
+:Apellido M: Alvarado
+$I:38:21 PM : DEBUG [CursorPoll.py] : 11 Inicio de bloque with
+$I:38:21 PM : DEBUG [Conexion2.py] : 40 Conexion Realizada <connection object at 0x0000025011FCDBE0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:38:21 PM : DEBUG [CursorPoll.py] : 17 Se ejecuta exit
+$I:38:21 PM : DEBUG [Conexion2.py] : 46 Conexion regresada <connection object at 0x0000025011FCDBE0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:38:21 PM : DEBUG [PersonajeDAO.py] : 59 idPersonaje: 1
+Nombre: gera
+Poder: 55
+$I:38:21 PM : DEBUG [PersonajeDAO.py] : 59 idPersonaje: 2
+Nombre: Fermin
+Poder: 97
+$I:38:21 PM : DEBUG [PersonajeDAO.py] : 59 idPersonaje: 3
+Nombre: luis
+Poder: 58
+$I:42:50 PM : DEBUG [CursorPoll.py] : 11 Inicio de bloque with
+$I:42:50 PM : DEBUG [Conexion2.py] : 40 Conexion Realizada <connection object at 0x000002452E9BDCF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:42:50 PM : DEBUG [CursorPoll.py] : 17 Se ejecuta exit
+$I:42:50 PM : DEBUG [Conexion2.py] : 46 Conexion regresada <connection object at 0x000002452E9BDCF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:42:50 PM : DEBUG [PersonajeDAO.py] : 65 Mario ingresado correctamente, personajes insertados: 1
+$I:46:50 PM : DEBUG [CursorPoll.py] : 11 Inicio de bloque with
+$I:46:50 PM : DEBUG [Conexion2.py] : 40 Conexion Realizada <connection object at 0x000002AAFCE3DCF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:46:50 PM : DEBUG [CursorPoll.py] : 17 Se ejecuta exit
+$I:46:50 PM : DEBUG [Conexion2.py] : 46 Conexion regresada <connection object at 0x000002AAFCE3DCF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:47:51 PM : DEBUG [CursorPoll.py] : 11 Inicio de bloque with
+$I:47:51 PM : DEBUG [Conexion2.py] : 40 Conexion Realizada <connection object at 0x0000021442C8DCF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:47:51 PM : DEBUG [CursorPoll.py] : 17 Se ejecuta exit
+$I:47:51 PM : DEBUG [Conexion2.py] : 46 Conexion regresada <connection object at 0x0000021442C8DCF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:47:51 PM : DEBUG [PersonajeDAO.py] : 76 Luigi Actualizado Correctamente
+$I:50:11 PM : DEBUG [CursorPoll.py] : 11 Inicio de bloque with
+$I:50:11 PM : DEBUG [Conexion2.py] : 40 Conexion Realizada <connection object at 0x0000021B692EDCF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:50:11 PM : DEBUG [CursorPoll.py] : 17 Se ejecuta exit
+$I:50:11 PM : DEBUG [Conexion2.py] : 46 Conexion regresada <connection object at 0x0000021B692EDCF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:50:11 PM : DEBUG [PersonajeDAO.py] : 82  Eliminado Correctamente
+$I:52:53 PM : DEBUG [CursorPoll.py] : 11 Inicio de bloque with
+$I:52:53 PM : DEBUG [Conexion2.py] : 40 Conexion Realizada <connection object at 0x000001C842A6DBE0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:52:53 PM : DEBUG [CursorPoll.py] : 17 Se ejecuta exit
+$I:52:53 PM : DEBUG [Conexion2.py] : 46 Conexion regresada <connection object at 0x000001C842A6DBE0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:52:53 PM : DEBUG [ArtistaDAO.py] : 59 idArtista: 1
+Nombre Artistico: Daddy Yankee
+Genero: Reggaeton
+$I:55:20 PM : DEBUG [CursorPoll.py] : 11 Inicio de bloque with
+$I:55:20 PM : DEBUG [Conexion2.py] : 40 Conexion Realizada <connection object at 0x000002215C16DBE0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:55:20 PM : DEBUG [CursorPoll.py] : 17 Se ejecuta exit
+$I:55:20 PM : DEBUG [Conexion2.py] : 46 Conexion regresada <connection object at 0x000002215C16DBE0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:55:20 PM : DEBUG [ArtistaDAO.py] : 59 idArtista: 1
+Nombre Artistico: Daddy Yankee
+Genero: Reggaeton
+$I:55:20 PM : DEBUG [ArtistaDAO.py] : 59 idArtista: 2
+Nombre Artistico: Don Omar
+Genero: Reggaeton
+$I:55:20 PM : DEBUG [ArtistaDAO.py] : 59 idArtista: 3
+Nombre Artistico: Michael Jackson
+Genero: Disco, Rock, Pop
+$I:55:20 PM : DEBUG [ArtistaDAO.py] : 59 idArtista: 4
+Nombre Artistico: Ken Y
+Genero: Reggaeton, Pop latino
+$I:57:37 PM : DEBUG [CursorPoll.py] : 11 Inicio de bloque with
+$I:57:37 PM : DEBUG [Conexion2.py] : 40 Conexion Realizada <connection object at 0x0000023BD7D1DCF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:57:37 PM : DEBUG [CursorPoll.py] : 17 Se ejecuta exit
+$I:57:37 PM : DEBUG [Conexion2.py] : 46 Conexion regresada <connection object at 0x0000023BD7D1DCF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:57:37 PM : DEBUG [ArtistaDAO.py] : 70 Luis Miguel ingresado correctamente, artista insertado: 1
+$I:02:41 PM : DEBUG [CursorPoll.py] : 11 Inicio de bloque with
+$I:02:41 PM : DEBUG [Conexion2.py] : 40 Conexion Realizada <connection object at 0x0000027B5060DCF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:02:41 PM : DEBUG [CursorPoll.py] : 17 Se ejecuta exit
+$I:02:41 PM : DEBUG [Conexion2.py] : 46 Conexion regresada <connection object at 0x0000027B5060DCF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:02:41 PM : DEBUG [ArtistaDAO.py] : 76 50 cent Actualizado Correctamente
+$I:04:59 PM : DEBUG [CursorPoll.py] : 11 Inicio de bloque with
+$I:04:59 PM : DEBUG [Conexion2.py] : 40 Conexion Realizada <connection object at 0x000002877EC6DCF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:04:59 PM : DEBUG [CursorPoll.py] : 17 Se ejecuta exit
+$I:04:59 PM : DEBUG [Conexion2.py] : 46 Conexion regresada <connection object at 0x000002877EC6DCF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:04:59 PM : DEBUG [ArtistaDAO.py] : 82 Artista Eliminado
+$I:09:36 PM : DEBUG [CursorPoll.py] : 11 Inicio de bloque with
+$I:09:36 PM : DEBUG [Conexion2.py] : 40 Conexion Realizada <connection object at 0x000002C5CED7DBE0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:09:36 PM : DEBUG [CursorPoll.py] : 17 Se ejecuta exit
+$I:09:36 PM : DEBUG [Conexion2.py] : 46 Conexion regresada <connection object at 0x000002C5CED7DBE0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:09:36 PM : DEBUG [AlumnoDAO.py] : 55 idAlumno: 1
+Nombre: Gerardo Jesus
+Apellido P: Cruz
+:Apellido M: Mota
+$I:09:36 PM : DEBUG [AlumnoDAO.py] : 55 idAlumno: 2
+Nombre: Juan
+Apellido P: Hernandez
+:Apellido M: Rosas
+$I:09:36 PM : DEBUG [AlumnoDAO.py] : 55 idAlumno: 3
+Nombre: Victor Fermin
+Apellido P: Martinez
+:Apellido M: Alvarado
+$I:12:06 PM : DEBUG [CursorPoll.py] : 11 Inicio de bloque with
+$I:12:06 PM : DEBUG [Conexion2.py] : 40 Conexion Realizada <connection object at 0x0000019826521CF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:12:06 PM : DEBUG [CursorPoll.py] : 17 Se ejecuta exit
+$I:12:06 PM : DEBUG [Conexion2.py] : 46 Conexion regresada <connection object at 0x0000019826521CF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:12:06 PM : DEBUG [AlumnoDAO.py] : 61 Ingresado correctamente, alumno insertado: 1
+$I:15:22 PM : DEBUG [CursorPoll.py] : 11 Inicio de bloque with
+$I:15:22 PM : DEBUG [Conexion2.py] : 40 Conexion Realizada <connection object at 0x0000018AB4FDDCF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:15:22 PM : DEBUG [CursorPoll.py] : 17 Se ejecuta exit
+$I:15:22 PM : DEBUG [Conexion2.py] : 46 Conexion regresada <connection object at 0x0000018AB4FDDCF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:15:22 PM : DEBUG [AlumnoDAO.py] : 72 Alumno Actualizado Correctamente
+$I:17:19 PM : DEBUG [CursorPoll.py] : 11 Inicio de bloque with
+$I:17:19 PM : DEBUG [Conexion2.py] : 40 Conexion Realizada <connection object at 0x00000273C7F8DCF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:17:19 PM : DEBUG [CursorPoll.py] : 17 Se ejecuta exit
+$I:17:19 PM : DEBUG [Conexion2.py] : 46 Conexion regresada <connection object at 0x00000273C7F8DCF0; dsn: 'user=postgres password=xxx dbname=POSTGRES1 host=127.0.0.1 port=5432', closed: 0>
+$I:17:19 PM : DEBUG [AlumnoDAO.py] : 78 Alumno Eliminado
