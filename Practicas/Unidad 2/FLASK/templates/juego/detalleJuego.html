@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Juego</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/detalleEntidad.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="centered-h1">Detalle del Juego</h1>
+        <div class="info-container">
+            <div class="info-left">
+                <a class="custom-link" href="{{url_for('appindex.index')}}">Inicio</a>
+                <a class="custom-link" href="{{url_for('appjuego.inicio')}}">Lista de Juegos</a>
+                <p><b>ID:</b> {{ juego.id }}</p>
+                <p><b>Nombre:</b> {{ juego.nombre }}</p>
+                <p><b>Año de Lanzamiento:</b> {{ juego.fecha_lanzamiento }}</p>
+                <p><b>Género:</b> {{ juego.genero }}</p>
+                <p><b>Copias Vendidas:</b> {{ juego.copias_vendidas }}</p>
+            </div>
+            <div class="image-right">
+                <p><b>Imagen:</b></p>
+                <img class="bordered-image" src="{{ juego.imagen }}" alt="Imagen del Juego" style="width: 300px;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE, edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Juego</title>
+</head>
+<body>
+    <h1>Editar Juego</h1>
+
+    <form method="POST">
+        {{ forma.csrf_token }}
+        <p>
+            {{ forma.nombre.label }}<br>
+            {{ forma.nombre(size=30) }}
+        </p>
+        <p>
+            {{ forma.fecha_lanzamiento.label }}<br>
+            {{ forma.fecha_lanzamiento(size=30) }}
+        </p>
+        <p>
+            {{ forma.genero.label }}<br>
+            {{ forma.genero(size=30) }}
+        </p>
+        <p>
+            {{ forma.copias_vendidas.label }}<br>
+            {{ forma.copias_vendidas(size=30) }}
+        </p>
+        <p>
+            {{ forma.imagen.label }}<br>
+            {{ forma.imagen(size=30) }}
+        </p>
+        <p>
+            {{ forma.enviar() }}
+        </p>
+    </form>
+</body>
+</html>

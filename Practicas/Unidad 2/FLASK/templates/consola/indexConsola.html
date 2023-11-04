@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Consolas</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/indexListas.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Listado de Consolas</h1>
+        <div>
+            <a class="btn-link" href="{{url_for('appindex.index')}}">Inicio</a>
+        </div>
+        <div>
+            <a class="btn-link" href="{{url_for('appconsola.agregarConsola')}}">Agregar Consola</a>
+        </div>
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Fecha de Lanzamiento</th>
+                    <th>Generación</th>
+                    <th>Consolas Vendidas</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for consola in consolas %}
+                <tr>
+                    <td>{{ consola.id }}</td>
+                    <td>{{ consola.nombre }}</td>
+                    <td>{{ consola.fecha_lanzamiento }}</td>
+                    <td>{{ consola.generacion }}</td>
+                    <td>{{ consola.consolas_vendidas }}</td>
+                    <td>
+                        <a class="btn-link" href="detalleConsola/{{ consola.id }}">Detalle</a>
+                        <a class="btn-link" href="editarConsola/{{ consola.id }}">Editar</a>
+                        <a class="btn-link" href="eliminarConsola/{{ consola.id }}">Eliminar</a>
+                    </td>
+                </tr>        
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="hongo">
+        <div class="tallo"></div>
+        <div class="bolitas">
+            <div class="bolita"></div>
+            <div class="bolita"></div>
+            <div class="bolita"></div>
+        </div>
+    </div>
+</body>
+</html>

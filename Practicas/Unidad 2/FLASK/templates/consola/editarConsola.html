@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE, edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Consola</title>
+</head>
+<body>
+    <h1>Editar Consola</h1>
+
+    <form method="POST">
+        {{ forma.csrf_token }}
+        <p>
+            {{ forma.nombre.label }}<br>
+            {{ forma.nombre(size=30) }}
+        </p>
+        <p>
+            {{ forma.fecha_lanzamiento.label }}<br>
+            {{ forma.fecha_lanzamiento(size=30) }}
+        </p>
+        <p>
+            {{ forma.generacion.label }}<br>
+            {{ forma.generacion(size=30) }}
+        </p>
+        <p>
+            {{ forma.consolas_vendidas.label }}<br>
+            {{ forma.consolas_vendidas(size=30) }}
+        </p>
+        <p>
+            {{ forma.imagen.label }}<br>
+            {{ forma.imagen(size=30) }}
+        </p>
+        <p>
+            {{ forma.enviar() }}
+        </p>
+    </form>
+</body>
+</html>
