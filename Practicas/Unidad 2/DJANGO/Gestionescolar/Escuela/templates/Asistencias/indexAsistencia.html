@@ -3,7 +3,9 @@
 {% block body %}
 <div class="container mt-4">
     <h1>Lista de Asistencias</h1>
-    <a href="nuevaAsistencia" class="btn btn-primary mb-3">Agregar</a>
+    <a href="nuevaAsistencia" class="btn btn-primary mb-3">
+        <i class="material-icons">add</i> Agregar
+    </a>
     <table class="table">
         <thead class="thead-dark">
             <tr>
@@ -23,9 +25,9 @@
                     <td>{{asistencia.curso}}</td>
                     <td>{{asistencia.fecha}}</td>
                     <td>{{asistencia.asistencia_estudiante}}</td>
-                    <td><a href="editarAsistencia/{{asistencia.id}}" class="btn btn-warning btn-sm">Editar</a></td>
-                    <td><a href="detalleAsistencia/{{asistencia.id}}" class="btn btn-info btn-sm">Detalle</a></td>
-                    <td><a href="EliminarAsistencias/{{asistencia.id}}" class="btn btn-danger btn-sm">Eliminar</a></td>
+                    <td><a href="editarAsistencia/{{asistencia.id}}" class="btn btn-warning btn-sm"><i class="material-icons">edit</i>Editar</a></td>
+                    <td><a href="detalleAsistencia/{{asistencia.id}}" class="btn btn-info btn-sm"><i class="material-icons">info</i>Detalle</a></td>
+                    <td><a href="EliminarAsistencias/{{asistencia.id}}" class="btn btn-danger btn-sm"><i class="material-icons">delete</i>Eliminar</a></td>
                 </tr>
             {% endfor %}
         </tbody>

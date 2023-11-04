@@ -2,15 +2,17 @@
 
 {% block body %}
 <div class="container mt-4">
-    <h1>Lista de Calificiones</h1>
-    <a href="nuevaCalificacion" class="btn btn-primary mb-3">Agregar</a>
+    <h1>Lista de Calificaciones</h1>
+    <a href="nuevaCalificacion" class="btn btn-primary mb-3">
+        <i class="material-icons">add</i> Agregar
+    </a>
     <table class="table">
         <thead class="thead-dark">
             <tr>
                 <th>ID</th>
                 <th>Nombre</th>
                 <th>Estudiante</th>
-                <th>Calificacion</th>
+                <th>Calificación</th>
                 <th>Editar</th>
                 <th>Detalle</th>
                 <th>Eliminar</th>
@@ -23,9 +25,12 @@
                     <td>{{calificacion.curso}}</td>
                     <td>{{calificacion.estudiante}}</td>
                     <td>{{calificacion.calificacion}}</td>
-                    <td><a href="editarCalificacion/{{calificacion.id}}" class="btn btn-warning btn-sm">Editar</a></td>
-                    <td><a href="detalleCalificacion/{{calificacion.id}}" class="btn btn-info btn-sm">Detalle</a></td>
-                    <td><a href="EliminarCalificacion/{{calificacion.id}}" class="btn btn-danger btn-sm">Eliminar</a></td>
+                    <td><a href="editarCalificacion/{{calificacion.id}}" class="btn btn-warning btn-sm">
+                        <i class="material-icons">edit</i> Editar</a></td>
+                    <td><a href="detalleCalificacion/{{calificacion.id}}" class="btn btn-info btn-sm">
+                        <i class="material-icons">info</i> Detalle</a></td>
+                    <td><a href="EliminarCalificacion/{{calificacion.id}}" class="btn btn-danger btn-sm">
+                        <i class="material-icons">delete</i> Eliminar</a></td>
                 </tr>
             {% endfor %}
         </tbody>

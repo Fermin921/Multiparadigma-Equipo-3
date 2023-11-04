@@ -1,16 +1,30 @@
 {% extends "../layoutClase.html" %}
-{%block body%}
-<div>
+{% block body %}
+<div class="container mt-4">
     <form method="post">
-        <h1>Editar Calificacion</h1>
-    <table>
-        <div>
-            {{formaCalificacion}}
+        <h1 class="mb-4">Editar Calificación</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    {{ formaCalificacion.curso.label_tag }}
+                    {{ formaCalificacion.curso }}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    {{ formaCalificacion.estudiante.label_tag }}
+                    {{ formaCalificacion.estudiante }}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    {{ formaCalificacion.calificacion.label_tag }}
+                    {{ formaCalificacion.calificacion }}
+                </div>
+            </div>
         </div>
-    </table>
-        <input type="submit" value="Guardar">
-    </div>
-    {% csrf_token %}
+        <button type="submit" class="btn btn-primary">Guardar <i class="material-icons">save</i></button>
+        {% csrf_token %}
     </form>
 </div>
-{%endblock%}
+{% endblock %}

@@ -1,12 +1,15 @@
 {% extends "../layoutClase.html" %}
+
 {% block body %}
-<div>
+<div class="container mt-4">
     <form method="post">
         <h1>Editar Clase</h1>
         <div class="form-group">
             {{ formaClase }}
         </div>
-        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button type="submit" class="btn btn-primary">
+            <i class="material-icons">save</i> Guardar
+        </button>
         {% csrf_token %}
     </form>
 </div>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +8,35 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Layout</title>
 </head>
+
 <body>
     <header class="bg-dark text-light">
         <nav class="container">
-            <ul class="nav">
+            <ul class="nav justify-content-center justify-content-md-start">
                 <li class="nav-item"><a class="nav-link" href="inicio"><i class="material-icons">home</i> Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#"><i class="material-icons">info</i> Acerca de</a></li>
                 <li class="nav-item"><a class="nav-link" href="#"><i class="material-icons">mail</i> Contacto</a></li>
             </ul>
         </nav>
     </header>
-    
-    {%block body %}
 
-    {%endblock%}
-    
-    <footer class="bg-light text-dark">
+    {% block body %}
+
+    {% endblock %}
+
+    <footer class="bg-light text-dark mt-4">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <p>&copy; 2023 Programacion Multiparadigma</p>
+                    <p>&copy; 2023 Programación Multiparadigma</p>
                 </div>
             </div>
         </div>
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzprOoE4iSn6lr8h8FCzRMzD/2EA3Ut5P" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-o8IgJZhDQmD0u9G0NsnegA7QF7eQK/z95/S7I9tJ/19fu3F6X8XjOHISQVxWuWlN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wOw2RtfVl4E7lP4Ii9c5nsgXnN+KlHtV9+rY1jMvUyfJBRM72z7zKefYvBMiHPb5" crossorigin="anonymous"></script>
 </body>
-</html>
 
+</html>
