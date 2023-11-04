@@ -20,6 +20,7 @@ from Escuela.views import *
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("", index),
     path("inicio", index),
     # Clase
     path("ListadoClase", indexClase, name="ListadoClase"),
@@ -38,5 +39,5 @@ urlpatterns = [
     path("nuevaAsistencia", nuevaAsistencia),
     path("detalleAsistencia/<int:id>", DetalleAsistencia),
     path("editarAsistencia/<int:id>", editarAsistencia),
-    path("EliminarAsistencia/<int:id>", EliminarAsistencia),
+    path("EliminarAsistencias/<int:id>", EliminarAsistencia),
 ]

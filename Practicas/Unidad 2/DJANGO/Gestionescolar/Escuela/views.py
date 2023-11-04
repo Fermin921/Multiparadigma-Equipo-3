@@ -29,7 +29,7 @@ def editarclase(request, id):
     return render(request, "Clase/editarClase.html", {"formaClase": formaClase})
 
 
-# EliminarPersona
+# EliminarClase
 def Eliminarclase(request, id):
     clase = get_object_or_404(Clase, pk=id)
     if clase:
@@ -37,7 +37,7 @@ def Eliminarclase(request, id):
     return redirect("ListadoClase")
 
 
-# ConsultarPersonas
+# ConsultarClase
 def Detalleclase(request, id):
     clase = get_object_or_404(Clase, pk=id)
     return render(request, "Clase/detalleClase.html", {"clase": clase})
