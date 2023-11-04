@@ -1,0 +1,34 @@
+{% extends "../layoutClase.html" %}
+
+{% block body %}
+<div class="container mt-4">
+    <h1>Lista de Asistencias</h1>
+    <a href="nuevaAsistencia" class="btn btn-primary mb-3">Agregar</a>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Curso</th>
+                <th>Fecha</th>
+                <th>Estudiante</th>
+                <th>Editar</th>
+                <th>Detalle</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for asistencia in asistencias %} 
+                <tr>
+                    <td>{{asistencia.id}}</td>
+                    <td>{{asistencia.curso}}</td>
+                    <td>{{asistencia.fecha}}</td>
+                    <td>{{asistencia.asistencia_estudiante}}</td>
+                    <td><a href="editarAsistencia/{{asistencia.id}}" class="btn btn-warning btn-sm">Editar</a></td>
+                    <td><a href="detalleAsistencia/{{asistencia.id}}" class="btn btn-info btn-sm">Detalle</a></td>
+                    <td><a href="EliminarAsistencia/{{asistecia.id}}" class="btn btn-danger btn-sm">Eliminar</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

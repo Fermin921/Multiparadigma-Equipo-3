@@ -1,0 +1,16 @@
+{% extends "../layoutClase.html" %}
+
+{% block body %}
+<div class="container mt-4">
+    <form method="post">
+        <h1>Editar Asistencia</h1>
+        <div class="row">
+            <div class="col-md-6">
+                {{ formaAsistencia }}
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        {% csrf_token %}
+    </form>
+</div>
+{% endblock %}

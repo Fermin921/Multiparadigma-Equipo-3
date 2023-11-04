@@ -1,0 +1,34 @@
+{% extends "../layoutClase.html" %}
+
+{% block body %}
+<div class="container mt-4">
+    <h1>Lista de Clases</h1>
+    <a href="nuevaclase" class="btn btn-primary mb-3">Agregar</a>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Clave</th>
+                <th>Profesor</th>
+                <th>Estudiante</th>
+                <th>Editar</th>
+                <th>Detalle</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for clase in clases %} 
+                <tr>
+                    <td>{{clase.id}}</td>
+                    <td>{{clase.nombre}}</td>
+                    <td>{{clase.profesor}}</td>
+                    <td>{{clase.estudiante}}</td>
+                    <td><a href="editarClase/{{clase.id}}" class="btn btn-warning btn-sm">Editar</a></td>
+                    <td><a href="detalleClase/{{clase.id}}" class="btn btn-info btn-sm">Detalle</a></td>
+                    <td><a href="EliminarClase/{{clase.id}}" class="btn btn-danger btn-sm">Eliminar</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

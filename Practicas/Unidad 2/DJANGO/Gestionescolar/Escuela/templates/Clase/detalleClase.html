@@ -1,0 +1,15 @@
+{% extends "layoutClase.html" %}
+
+{% block body %}
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">{{ clase.nombre }}</h1>
+            <p class="card-text">ID: {{ clase.id }}</p>
+            <p class="card-text">Profesor: {{ clase.profesor }}</p>
+            <p class="card-text">Estudiante: {{ clase.estudiante }}</p>
+            <a href="{% url 'ListadoClase' %}" class="btn btn-primary">Regresar</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

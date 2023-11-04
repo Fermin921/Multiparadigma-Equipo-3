@@ -1,0 +1,16 @@
+{% extends "../layoutClase.html" %}
+
+{% block body %}
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">{{ asistencia.curso }}</h1>
+            <p class="card-text">ID: {{ asistencia.id }}</p>
+            <p class="card-text">Nombre: {{ asistencia.curso }}</p>
+            <p class="card-text">Fecha: {{ asistencia.fecha }}</p>
+            <p class="card-text">Estudiante: {{ asistencia.asistencia_estudiante}}</p>
+            <a href="{% url 'ListadoAsistencias' %}" class="btn btn-primary">Regresar</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

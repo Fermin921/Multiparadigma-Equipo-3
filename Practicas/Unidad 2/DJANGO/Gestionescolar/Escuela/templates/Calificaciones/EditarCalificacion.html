@@ -1,0 +1,16 @@
+{% extends "../layoutClase.html" %}
+{%block body%}
+<div>
+    <form method="post">
+        <h1>Editar Calificacion</h1>
+    <table>
+        <div>
+            {{formaCalificacion}}
+        </div>
+    </table>
+        <input type="submit" value="Guardar">
+    </div>
+    {% csrf_token %}
+    </form>
+</div>
+{%endblock%}

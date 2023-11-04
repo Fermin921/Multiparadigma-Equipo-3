@@ -1,0 +1,16 @@
+{% extends "../layoutClase.html" %}
+
+{% block body %}
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">{{ Calificacion.curso }}</h1>
+            <p class="card-text">ID: {{ Calificacion.id }}</p>
+            <p class="card-text">Nombre: {{ Calificacion.curso }}</p>
+            <p class="card-text">Estudiante: {{ Calificacion.estudiante }}</p>
+            <p class="card-text">Calificacion: {{ Calificacion.calificacion }}</p>
+            <a href="{% url 'ListadoCalificacion' %}" class="btn btn-primary">Regresar</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

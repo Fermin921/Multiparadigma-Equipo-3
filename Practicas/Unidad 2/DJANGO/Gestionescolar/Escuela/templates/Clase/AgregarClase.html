@@ -1,0 +1,15 @@
+{% extends "layoutClase.html" %}
+
+{% block body %}
+<div class="container mt-4">
+    <form method="post">
+        <h1>Agregar Clase</h1>
+        <div class="form-group">
+            {{ formaClase }}
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        {% csrf_token %}
+    </form>
+</div>
+{% endblock %}
+
