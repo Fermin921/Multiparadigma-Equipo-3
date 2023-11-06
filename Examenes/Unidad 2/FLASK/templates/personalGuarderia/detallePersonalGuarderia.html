@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Personal de Guardería</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/detalle.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="centered-h1">Detalle del Personal de Guardería</h1>
+        <div class="info-container">
+            <div class="info-left">
+                <a class="custom-link" href="{{url_for('apppersonal.inicio')}}">Lista de Personal de Guardería</a>
+                <p><b>ID:</b> {{ personal_guarderia.id }}</p>
+                <p><b>Nombre:</b> {{ personal_guarderia.nombre }}</p>
+                <p><b>Apellido:</b> {{ personal_guarderia.apellido }}</p>
+                <p><b>Puesto:</b> {{ personal_guarderia.puesto }}</p>
+                <p><b>Fecha de Contratación:</b> {{ personal_guarderia.fecha_contratacion }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

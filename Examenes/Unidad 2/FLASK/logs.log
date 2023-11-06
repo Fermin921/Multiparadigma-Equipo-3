@@ -1,0 +1,388 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:50:01] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:50:02] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:50:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\routes\personalGuarderia\personalGuarderia.py", line 13, in inicio
+    return render_template('personalGuarderia/indexPersonalGuarderia.html', personal_guarderia=personal_guarderia)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\templating.py", line 152, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\templating.py", line 133, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\templates\personalGuarderia\indexPersonalGuarderia.html", line 14, in top-level template code
+    <a class="btn-link" href="{{url_for('appindex.index')}}">Inicio</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1071, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1060, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\werkzeug\routing\map.py", line 919, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'appindex.index'. Did you mean 'apppersonal.inicio' instead?
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:51:16] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\routes\personalGuarderia\personalGuarderia.py", line 13, in inicio
+    return render_template('personalGuarderia/indexPersonalGuarderia.html', personal_guarderia=personal_guarderia)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\templating.py", line 152, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\templating.py", line 133, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\templates\personalGuarderia\indexPersonalGuarderia.html", line 14, in top-level template code
+    <a class="btn-link" href="{{url_for('appindex.index')}}">Inicio</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1071, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1060, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\werkzeug\routing\map.py", line 919, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'appindex.index'. Did you mean 'apppersonal.inicio' instead?
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:51:22] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\routes\personalGuarderia\personalGuarderia.py", line 13, in inicio
+    return render_template('personalGuarderia/indexPersonalGuarderia.html', personal_guarderia=personal_guarderia)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\templating.py", line 152, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\templating.py", line 133, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\templates\personalGuarderia\indexPersonalGuarderia.html", line 14, in top-level template code
+    <a class="btn-link" href="{{url_for('appindex.index')}}">Inicio</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1071, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1060, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\werkzeug\routing\map.py", line 919, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'appindex.index'. Did you mean 'apppersonal.inicio' instead?
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:51:26] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\routes\personalGuarderia\personalGuarderia.py", line 13, in inicio
+    return render_template('personalGuarderia/indexPersonalGuarderia.html', personal_guarderia=personal_guarderia)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\templating.py", line 152, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\templating.py", line 133, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\templates\personalGuarderia\indexPersonalGuarderia.html", line 14, in top-level template code
+    <a class="btn-link" href="{{url_for('appindex.index')}}">Inicio</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1071, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1060, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\werkzeug\routing\map.py", line 919, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'appindex.index'. Did you mean 'apppersonal.inicio' instead?
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:51:28] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:52:57] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:52:57] "[33mGET /static/css/indexListas.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:53:22] "GET /agregarPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:53:22] "[33mGET /static/css/agregarEntidad.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:53:28] "GET /agregarPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:53:28] "[33mGET /static/css/agregarEntidad.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:53:55] "[32mPOST /agregarPersonalGuarderia HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:53:55] "GET /indexPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:53:55] "[33mGET /static/css/indexListas.css HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /detallePersonalGuarderia/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\routes\personalGuarderia\personalGuarderia.py", line 48, in detallePersonalGuarderia
+    return render_template('personalGuarderia/detallePersonalGuarderia.html', personal_guarderia=personal_guarderia)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\templating.py", line 152, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\templating.py", line 133, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\templates\personalGuarderia\detallePersonalGuarderia.html", line 15, in top-level template code
+    <a class="custom-link" href="{{url_for('appindex.index')}}">Inicio</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1071, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1060, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\werkzeug\routing\map.py", line 919, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'appindex.index'. Did you mean 'apppersonal.inicio' instead?
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:54:38] "[35m[1mGET /detallePersonalGuarderia/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:55:09] "GET /editarPersonalGuarderia/1 HTTP/1.1" 200 -
+ERROR:app:Exception on /detallePersonalGuarderia/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\routes\personalGuarderia\personalGuarderia.py", line 48, in detallePersonalGuarderia
+    return render_template('personalGuarderia/detallePersonalGuarderia.html', personal_guarderia=personal_guarderia)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\templating.py", line 152, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\templating.py", line 133, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\templates\personalGuarderia\detallePersonalGuarderia.html", line 15, in top-level template code
+    <a class="custom-link" href="{{url_for('appindex.index')}}">Inicio</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1071, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1060, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\werkzeug\routing\map.py", line 919, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'appindex.index'. Did you mean 'apppersonal.inicio' instead?
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:55:12] "[35m[1mGET /detallePersonalGuarderia/1 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /detallePersonalGuarderia/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\routes\personalGuarderia\personalGuarderia.py", line 48, in detallePersonalGuarderia
+    return render_template('personalGuarderia/detallePersonalGuarderia.html', personal_guarderia=personal_guarderia)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\templating.py", line 152, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\templating.py", line 133, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\templates\personalGuarderia\detallePersonalGuarderia.html", line 15, in top-level template code
+    <a class="custom-link" href="{{url_for('appindex.index')}}">Inicio</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1071, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\flask\app.py", line 1060, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ultre\OneDrive\Escritorio\Multiparadigma-Equipo-3\Examenes\Unidad 2\FLASK\.venv\Lib\site-packages\werkzeug\routing\map.py", line 919, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'appindex.index'. Did you mean 'apppersonal.inicio' instead?
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:55:15] "[35m[1mGET /detallePersonalGuarderia/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:56:10] "GET /detallePersonalGuarderia/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:56:10] "[33mGET /static/css/detalleEntidad.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:56:15] "GET /indexPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:56:15] "[33mGET /static/css/indexListas.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:56:17] "GET /detallePersonalGuarderia/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:56:17] "[33mGET /static/css/detalleEntidad.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:56:18] "GET /indexPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:56:18] "[33mGET /static/css/indexListas.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:56:19] "GET /editarPersonalGuarderia/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:56:25] "GET /editarPersonalGuarderia/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:56:34] "[32mPOST /editarPersonalGuarderia/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:56:34] "GET /indexPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:56:34] "[33mGET /static/css/indexListas.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:56:38] "[32mGET /eliminarPersonalGuarderia/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:56:38] "GET /indexPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 10:56:39] "[33mGET /static/css/indexListas.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:32:57] "GET /indexPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:32:57] "[33mGET /static/css/indexListas.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:33:33] "GET /indexNiñoHTTP HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:35:41] "[35m[1mPOST /agregarNiñoHTTP HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:35:59] "[33mGET /consultarNiñoHTTP HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:36:13] "GET /indexNiñoHTTP HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:40:12] "GET /indexPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:40:12] "GET /static/css/indexLista.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:40:13] "GET /indexPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:40:13] "[36mGET /static/css/indexLista.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:40:47] "GET /indexPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:40:47] "GET /static/css/indexLista.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:40:54] "GET /agregarPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:40:54] "[33mGET /static/css/agregarEntidad.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:43:28] "GET /indexPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:43:28] "GET /static/css/indexLista.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:43:29] "GET /agregarPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:43:29] "GET /static/css/agregar.css HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:44:53] "GET /agregarPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:44:53] "[36mGET /static/css/agregar.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:45:04] "[32mPOST /agregarPersonalGuarderia HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:45:04] "GET /indexPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:45:04] "[36mGET /static/css/indexLista.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:45:17] "GET /detallePersonalGuarderia/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:45:17] "GET /static/css/detalle.css HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:47:26] "GET /detallePersonalGuarderia/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:47:26] "GET /static/css/detalle.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:47:33] "GET /indexPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:47:33] "[36mGET /static/css/indexLista.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:47:35] "GET /detallePersonalGuarderia/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:47:35] "[36mGET /static/css/detalle.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:47:37] "GET /indexPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:47:37] "[36mGET /static/css/indexLista.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:47:40] "GET /editarPersonalGuarderia/2 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:50:32] "GET /editarPersonalGuarderia/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:50:32] "GET /static/css/editar.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:50:39] "GET /editarPersonalGuarderia/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:50:39] "[36mGET /static/css/editar.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:51:17] "GET /editarPersonalGuarderia/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:51:17] "GET /static/css/editar.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:51:24] "[32mPOST /editarPersonalGuarderia/2 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:51:24] "GET /indexPersonalGuarderia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Nov/2023 11:51:24] "[36mGET /static/css/indexLista.css HTTP/1.1[0m" 304 -

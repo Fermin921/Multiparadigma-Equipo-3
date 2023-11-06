@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Personal de Guardería</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/indexLista.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Listado de Personal de Guardería</h1>
+        <div>
+            <a class="btn-link" href="{{url_for('apppersonal.agregarPersonalGuarderia')}}">Agregar Personal de Guardería</a>
+        </div>
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Puesto</th>
+                    <th>Fecha de Contratación</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for personal_guarderia in personal_guarderia %}
+                <tr>
+                    <td>{{ personal_guarderia.id }}</td>
+                    <td>{{ personal_guarderia.nombre }}</td>
+                    <td>{{ personal_guarderia.apellido }}</td>
+                    <td>{{ personal_guarderia.puesto }}</td>
+                    <td>{{ personal_guarderia.fecha_contratacion }}</td>
+                    <td>
+                        <a class="btn-link" href="detallePersonalGuarderia/{{ personal_guarderia.id }}">Detalle</a>
+                        <a class="btn-link" href="editarPersonalGuarderia/{{ personal_guarderia.id }}">Editar</a>
+                        <a class="btn-link" href="eliminarPersonalGuarderia/{{ personal_guarderia.id }}">Eliminar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+
+.centered-h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+
+.info-container {
+    text-align: left;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.custom-link {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.info-left p {
+    margin: 10px 0;
+}
+
+.info-left b {
+    font-weight: bold;
+}
+
+.info-left {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
