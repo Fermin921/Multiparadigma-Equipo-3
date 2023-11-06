@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Empleados</title>
+</head>
+<body>
+
+<div>
+    <h1>Lista de Empleados</h1>
+    <a href="agregarEmpleado">Agregar Empleado</a>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Nombre</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for empleado in empleados %}
+                <tr>
+                    <td>{{ empleado.id }}</td>
+                    <td>{{ empleado.nombre }}</td>
+                    <td><a href="editarEmpleado/{{ empleado.id }}">Editar</a></td>
+                    <td><a href="detalleEmpleado/{{ empleado.id }}">Detalle</a></td>
+                    <td><a href="eliminarEmpleado/{{ empleado.id }}">Eliminar</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

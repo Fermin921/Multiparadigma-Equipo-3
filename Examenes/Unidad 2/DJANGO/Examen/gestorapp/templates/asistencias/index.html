@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Asistencias</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="mt-5">Lista de Asistencias</h1>
+    <a class="btn btn-primary mb-3" href="{% url 'agregarAsistencia' %}">Agregar Asistencia</a>
+
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Bebé</th>
+                <th>Actividad</th>
+                <th>Fecha</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for asistencia in asistencias %}
+                <tr>
+                    <td>{{ asistencia.id }}</td>
+                    <td>{{ asistencia.bebe }}</td>
+                    <td>{{ asistencia.actividad }}</td>
+                    <td>{{ asistencia.fecha }}</td>
+                    <td>
+                        <a class="btn btn-info btn-sm" href="editarAsistencia/{{asistencia.id}}">Editar</a>
+                        <a class="btn btn-secondary btn-sm" href="detalleAsistencia/{{asistencia.id}}">Detalle</a>
+                        <a class="btn btn-danger btn-sm" href="eliminarAsistencia/{{asistencia.id}} ">Eliminar</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

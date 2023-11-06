@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Bebés</title>
+</head>
+<body>
+
+<div>
+    <h1>Lista de Bebés</h1>
+    <a href="agregarBebe">Agregar Bebé</a>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Nombre</td>
+                <td>Fecha de Nacimiento</td>
+                <td>Alergias</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for bebe in bebes %}
+                <tr>
+                    <td>{{ bebe.id }}</td>
+                    <td>{{ bebe.nombre }}</td>
+                    <td>{{ bebe.fecha_nacimiento }}</td>
+                    <td>{{ bebe.alergias }}</td>
+                    <td><a href="editarBebe/{{ bebe.id }}">Editar</a></td>
+                    <td><a href="detalleBebe/{{ bebe.id }}">Detalle</a></td>
+                    <td><a href="eliminarBebe/{{ bebe.id }}">Eliminar</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
