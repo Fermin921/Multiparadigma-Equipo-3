@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de la Consola</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/detalleEntidad.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="centered-h1">Detalle de la Consola</h1>
+        <div class="info-container">
+            <div class="info-left">
+                <a class="custom-link" href="{{url_for('appindex.index')}}">Inicio</a>
+                <a class="custom-link" href="{{url_for('appconsola.inicio')}}">Lista de Consolas</a>
+                <p><b>ID:</b> {{ consola.id }}</p>
+                <p><b>Nombre:</b> {{ consola.nombre }}</p>
+                <p><b>Fecha de Lanzamiento:</b> {{ consola.fecha_lanzamiento }}</p>
+                <p><b>Generación:</b> {{ consola.generacion }}</p>
+                <p><b>Consolas Vendidas:</b> {{ consola.consolas_vendidas }}</p>
+            </div>
+            <div class="image-right">
+                <p><b>Imagen:</b></p>
+                <img class="bordered-image" src="{{ consola.imagen }}" alt="Imagen de la Consola" style="width: 300px;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

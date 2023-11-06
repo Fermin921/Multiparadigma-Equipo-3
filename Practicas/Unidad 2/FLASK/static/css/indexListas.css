@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #e60012;
+    color: #fff;
+    border-radius: 15px;
+}
+
+a.btn-link {
+    text-decoration: none;
+    color: #e60012;
+    background-color: #fff;
+    padding: 5px 10px;
+    border: 2px solid #e60012;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+    margin-bottom: 10px;
+}
+
+a.btn-link:hover {
+    background-color: #e60012;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hongo CSS */
+.hongo {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #228B22; /* Color verde para el hongo */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    animation: hongoMovimiento 4s infinite linear;
+}
+
+.tallo {
+    position: absolute;
+    bottom: 0;
+    left: 45px; /* Ajusta la posición del tallo */
+    width: 10px; /* Ancho del tallo */
+    height: 80px; /* Altura del tallo */
+    background-color: #228B22; /* Color verde para el tallo */
+}
+
+.bolitas {
+    position: absolute;
+    bottom: 100px;
+    left: 35px; /* Ajusta la posición de las bolitas */
+    width: 30px; /* Tamaño de las bolitas */
+    height: 30px; /* Tamaño de las bolitas */
+}
+
+.bolita {
+    width: 10px; /* Tamaño de las bolitas */
+    height: 10px; /* Tamaño de las bolitas */
+    background-color: #FFD700; /* Color dorado para las bolitas */
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(0);
+    animation: bolitaMovimiento 2s alternate infinite ease-in-out;
+}
+
+.bolita:nth-child(1) {
+    left: 5px;
+    top: 5px;
+}
+
+.bolita:nth-child(2) {
+    left: 15px;
+    top: 10px;
+}
+
+.bolita:nth-child(3) {
+    left: 25px;
+    top: 5px;
+}
+
+@keyframes hongoMovimiento {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bolitaMovimiento {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}

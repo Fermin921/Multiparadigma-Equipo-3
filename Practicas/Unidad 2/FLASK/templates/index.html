@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/inicio.css') }}">
+</head>
+<body>
+    <h1>Categorías</h1>
+    <div class="links-container">
+        <a href="{{url_for('apppersonaje.inicio')}}">
+            <img src="{{ url_for('static', filename='imagenes/personajes.jpg') }}" alt="Personaje">
+            Personajes
+        </a>
+        <a href="{{url_for('appjuego.inicio')}}">
+            <img src="{{ url_for('static', filename='imagenes/juegos.jpeg') }}"  alt="Juego">
+            Juegos
+        </a>
+        <a href="{{url_for('appconsola.inicio')}}">
+            <img src="{{ url_for('static', filename='imagenes/consolas.jpg') }}"  alt="Consola">
+            Consolas
+        </a>
+    </div>
+</body>
+</html>

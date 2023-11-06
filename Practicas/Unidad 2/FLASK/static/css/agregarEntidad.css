@@ -1,0 +1,55 @@
+/* detalleEntidad.css */
+.centered-h1 {
+    text-align: center;
+    color: #FF0000; /* Texto rojo */
+    font-size: 28px; /* Tamaño de fuente más grande */
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #CCC;
+    background-color: #F0F0F0; /* Color de fondo gris */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.custom-link {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #3E79E0; /* Color del enlace */
+    font-weight: bold; /* Texto en negritas */
+}
+
+form {
+    margin: 20px 0;
+}
+
+form p {
+    margin: 10px 0;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #FF0000; /* Color de fondo rojo */
+    color: #FFFFFF; /* Texto en blanco */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+    background-color: #CC0000; /* Color de fondo rojo más oscuro en hover */
+}

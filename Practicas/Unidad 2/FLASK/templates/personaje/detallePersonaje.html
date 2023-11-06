@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Personaje</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/detalleEntidad.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="centered-h1">Detalle del Personaje</h1>
+        <div class="info-container">
+            <div class="info-left">
+                <a class="custom-link" href="{{url_for('appindex.index')}}">Inicio</a>
+                <a class="custom-link" href="{{url_for('apppersonaje.inicio')}}">Lista de Personajes</a>
+                <p><b>ID:</b> {{ personaje.id }}</p>
+                <p><b>Nombre:</b> {{ personaje.nombre }}</p>
+                <p><b>Descripción:</b> {{ personaje.descripcion }}</p>
+                <p><b>Franquicia:</b> {{ personaje.franquicia }}</p>
+                <p><b>Habilidades:</b> {{ personaje.habilidades }}</p>
+                <p><b>Fecha de Creación:</b> {{ personaje.fecha_creacion }}</p>
+            </div>
+            <div class="image-right">
+                <p><b>Imagen:</b></p>
+                <img class="bordered-image" src="{{ personaje.imagen }}" alt="Imagen del Personaje" style="width: 300px;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
