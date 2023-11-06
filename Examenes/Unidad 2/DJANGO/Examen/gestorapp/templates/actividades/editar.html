@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Actividad</title>
+</head>
+<body>
+
+<h1>Editar Actividad</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ formaactividad.as_p }}
+    <button type="submit">Guardar Cambios</button>
+</form>
+
+</body>
+</html>

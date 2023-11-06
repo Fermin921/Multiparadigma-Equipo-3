@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Padres</title>
+</head>
+<body>
+
+<div>
+    <h1>Lista de Padres</h1>
+    <a href="agregarPadre">Agregar Padre</a>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Nombre</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for padre in padres %}
+                <tr>
+                    <td>{{ padre.id }}</td>
+                    <td>{{ padre.nombre }}</td>
+                    <td><a href="editarPadre/{{ padre.id }}">Editar</a></td>
+                    <td><a href="detallePadre/{{ padre.id }}">Detalle</a></td>
+                    <td><a href="eliminarPadre/{{ padre.id }}">Eliminar</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
